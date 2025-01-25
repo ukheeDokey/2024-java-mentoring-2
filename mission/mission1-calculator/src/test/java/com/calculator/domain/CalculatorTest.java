@@ -21,32 +21,32 @@ class CalculatorTest {
     @Test
     @DisplayName("더하기 테스트")
     void addTest() {
-        int expectedResult = calculator.add(firstNumber, secondNumber);
-        int actualResult = firstNumber + secondNumber;
+        int expectedResult = 10;
+        int actualResult = calculator.add(firstNumber, secondNumber);
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     @DisplayName("빼기 테스트")
     void subtractTest() {
-        int expectedResult = calculator.subtract(firstNumber, secondNumber);
-        int actualResult = firstNumber - secondNumber;
+        int expectedResult = 4;
+        int actualResult = calculator.subtract(firstNumber, secondNumber);
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     @DisplayName("곱하기 테스트")
     void multiplyTest() {
-        int expectedResult = calculator.multiply(firstNumber, secondNumber);
-        int actualResult = firstNumber * secondNumber;
+        int expectedResult = 21;
+        int actualResult = calculator.multiply(firstNumber, secondNumber);
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     @DisplayName("나누기 테스트")
     void divideTest() {
-        int expectedResult = calculator.divide(firstNumber, secondNumber);
-        int actualResult = firstNumber / secondNumber;
+        int expectedResult = 2;
+        int actualResult = calculator.divide(firstNumber, secondNumber);
         assertEquals(expectedResult, actualResult);
     }
 }
